@@ -11,6 +11,7 @@
     <link href="./carousel.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
     <script src="./js/fontawesome.js"></script>
    
   </head>
@@ -204,10 +205,60 @@
         </div>
 
     </div>
+
+
+    <div class="container mt-5" id="sugestao">
+      <div class="form-row">
+        <div class="col-1 col-sm-1 col-1"></div>
+        <div class="col-12 col-sm-12 col-md-4 pb-4" id="contatowpp">
+          <div class="d-flex justify-content-center mt-5">
+            <img class="img-fluid"  width="70" height="70" src="./img/whatsapp.png"></img>
+          </div>
+          <div class="mt-5" >
+            <h3 id="wpptexto1">Agora ficou ainda <b>mais fácil</b> conversar com a gente.</h3>
+          </div>
+          <div>
+            <h2 id="wpptexto2">Atendimento pelo <b>Whatsapp</b></h2>
+          </div>
+          <div class="mt-5" id="btnwpp">
+            <p><a class="btn btn-primary btn-wpp" href="#"><b>Clique para começar</b></a></p>
+          </div>
+        </div>
+        <div class="col-1 col-sm-1 col-md-1"></div>
+        <div class="col-12 col-sm-12 col-md-5" id="contato">
+          <div class="row">
+            <div class="col-12 col-sm-12 col-md-12">
+              <h3>Deixe seu comentário...</h3>
+            </div>
+          </div>
+          <form>
+            <div class="form-group">
+              <label for="exampleFormControlInput1">Nome:</label>
+              <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Digite seu nome...">
+            </div>
+            <div class="form-group">
+              <label for="exampleFormControlInput1">Whatsapp:</label>
+              <input type="number" class="form-control" id="exampleFormControlInput1" placeholder="Digite seu whatsapp...">
+            </div>
+            <div class="form-group">
+              <label for="exampleFormControlInput1">Endereço:</label>
+              <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Digite seu endereço...">
+            </div>
+            <div class="form-group">
+              <label for="exampleFormControlTextarea1">Deixe seu comentário:</label>
+              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+            </div>
+            <div id="btnenviarcomentario">
+              <p><a class="btn btn-secondary" href="#">Enviar comentário</a></p>
+            </div>
+          </form>
+        </div>
+    </div>
+    </div>
       <!-- FOOTER -->
      
     </main>
-    <footer class=" d-flex justify-content-center align-items-end pt-3 " >
+    <footer class=" d-flex justify-content-center align-items-end pt-3 mt-5 " >
       <p>&copy; 2020 Chapa Renovar. Todos os direitos reservados &middot;</p>
     </footer>
   <script src="./js/jquery.js"></script>
