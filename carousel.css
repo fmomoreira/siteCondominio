@@ -40,6 +40,11 @@ nav a:hover{
   color: white!important;
 }
 
+#r2, #r3, #r4 {
+  background-color: #dad9d978;
+  padding: 10px 10px 10px 15px;
+}
+
 .nav-link:hover{
   background-color: #13a84a;
   border-radius: 20px;
