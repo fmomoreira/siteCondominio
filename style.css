@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 #contatowpp
 {
     background-color: #25432e;
@@ -6,8 +10,24 @@
     color: white;
 }
 
+#exampleFormControlInput1, #exampleFormControlTextarea1, #wpp{
+    border: 2px solid #13a84a;
+}
+
 #btnenviarcomentario{
     text-align: center;
+}
+
+.btn-enviar{
+    background-color: #13a84a!important;
+    border: none;
+}
+
+.btn-enviar:hover {
+    box-shadow: -2px -2px 5px 1px rgba(0, 0, 0, 0.541);
+    transition: 150ms;
+    background-color: #25432e!important;
+    border: 1px solid  #13a84a;
 }
 
 #wpptexto1, #wpptexto2 {
@@ -29,6 +49,8 @@
 .btn-wpp:hover {
     box-shadow: -2px -2px 5px 1px rgba(0, 0, 0, 0.541);
     transition: 150ms;
+    background-color: #25432e!important;
+    border: 1px solid  #13a84a;
 }
 
 @media only screen and (max-width: 800px) {

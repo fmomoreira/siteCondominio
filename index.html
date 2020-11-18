@@ -7,12 +7,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="Desenvolvimento leadinPage responsiva com bootstrap.">
     <meta name="author" content="Felipe Moreira, Vinicius Oliveira">
+    <!-- importação vue .js (framework do .js) -->
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    <script src="https://unpkg.com/vue@2.2.6/dist/vue.js"></script>
+    <script src="https://unpkg.com/vue-the-mask@0.11.1/dist/vue-the-mask.js"></script>
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link href="./carousel.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <script src="./js/fontawesome.js"></script>
    
   </head>
@@ -26,28 +31,39 @@
           <ul class="navbar-nav mr-auto d-flex justify-content-end" style="width: 100%;">
           
             <li class="nav-item">
-              <a class="nav-link" href="#">Integrantes</a>
+              <a class="nav-link" href="#navinicio">Início</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">Proposta</a>
+              <a class="nav-link" href="#navpropostas">Propostas</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">Sugestão</a>
+                <a class="nav-link" href="#navmembros">Integrantes</a>
             </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#navinformacoes">Informações</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#navsugestao">Sugestão</a>
+          </li>
            
           </ul>
         </div>
       </nav>
-      <div class="imgPrincipal">
-     
-        <h1>Renovar e preciso!</h1>
 
+      <div class="imgPrincipal typewritter" id="navinicio"> 
+        <h1>Renovar é preciso!</h1>
       </div>
+
     </header>
 
+    <div id="voltarTopo">
+      <a href="#" id="subirTopo">
+        <figure style="width: 35px;height: auto;">
+          <img class="img-fluid" src="./img/up-arrow.png" />
+        </figure>
+      </a>
+    </div>
 
-
-    
     
       <!-- Marketing messaging and featurettes
       ================================================== -->
@@ -59,7 +75,7 @@
             <div class="container">   
                 <div class="row">
                     <div class="col-12 d-flex justify-content-center">
-                        <h2>Você sabia que a administração atual esta a mais de uma década?</h2>
+                        <h2>Você sabia que a administração atual está a mais de uma década?</h2>
                     </div>
                     <div class="col-12 d-flex justify-content-center">
                         <h1>Renovar é Preciso!</h1>
@@ -67,7 +83,7 @@
                 </div>
             </div>
 
-            <hr class="featurette-divider">
+            <hr class="featurette-divider" id="navpropostas">
 
             <div class="row mb-5"id="nossasPropostas">
               <div  class="col-12 d-flex justify-content-center mt-2 mb-5 pt-5">
@@ -80,11 +96,11 @@
     
         <div class="row featurette">
           <div class="col-md-7">
-            <h2 class="featurette-heading">1. Proposta -<span class="text-muted">Transparencia !</span></h2>
-            <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis convallis, felis quis elementum rutrum, purus lacus gravida augue, ut sodales tortor tellus sit amet orci.</p>
+            <h2 class="featurette-heading wow animate__animated animate__backInLeft">1. <span class="text-muted">Transparencia !</span></h2>
+            <p class="lead wow animate__animated animate__backInLeft">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis convallis, felis quis elementum rutrum, purus lacus gravida augue, ut sodales tortor tellus sit amet orci.</p>
           </div>
           <div class="col-md-5">
-            <img class="img-fluid"  width="500" height="500" src="./img/valedoflamboyant-lago-ciclovia.jpg"></img>
+            <img class="img-fluid wow animate__animated animate__backInRight"  width="500" height="500" src="./img/valedoflamboyant-lago-ciclovia.jpg"></img>
           </div>
         </div>
     
@@ -92,11 +108,11 @@
     
         <div class="row featurette">
           <div class="col-md-7 order-md-2">
-            <h2 class="featurette-heading">2.Proposta -<span class="text-muted">Segurança e Liberdade</span></h2>
-            <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis convallis, felis quis elementum rutrum, purus lacus gravida augue, ut sodales tortor tellus sit amet orci.</p>
+            <h2 class="featurette-heading wow animate__animated animate__backInRight">2. <span class="text-muted">Segurança e Liberdade !</span></h2>
+            <p class="lead wow animate__animated animate__backInRight">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis convallis, felis quis elementum rutrum, purus lacus gravida augue, ut sodales tortor tellus sit amet orci.</p>
           </div>
           <div class="col-md-5 order-md-1">
-            <img class="img-fluid"  width="500" height="500" src="./img/valedoflamboyant-parque-1.jpg"></img>
+            <img class="img-fluid wow animate__animated animate__backInLeft"  width="500" height="500" src="./img/valedoflamboyant-parque-1.jpg"></img>
           </div>
         </div>
     
@@ -104,20 +120,20 @@
     
         <div class="row featurette">
           <div class="col-md-7">
-            <h2 class="featurette-heading">3 Proposta -<span class="text-muted">Inovação.</span></h2>
-            <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis convallis, felis quis elementum rutrum, purus lacus gravida augue, ut sodales tortor tellus sit amet orci.</p>
+            <h2 class="featurette-heading wow animate__animated animate__backInLeft">3. <span class="text-muted">Inovação !</span></h2>
+            <p class="lead wow animate__animated animate__backInLeft">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis convallis, felis quis elementum rutrum, purus lacus gravida augue, ut sodales tortor tellus sit amet orci.</p>
           </div>
           <div class="col-md-5">
-            <img class="img-fluid"  width="500" height="500" src="./img/valedoflamboyant-trilha.jpg"></img>
+            <img class="img-fluid wow animate__animated animate__backInRight"  width="500" height="500" src="./img/valedoflamboyant-trilha.jpg"></img>
           </div>
         </div>
     
-        <hr class="featurette-divider">
+        <hr class="featurette-divider" id="navmembros">
     
          <!-- Three columns of text below the carousel -->
          <div class="row" id="menbrosChapaRenovar">
-             <div class="col-12 d-flex justify-content-center mt-2 mb-5 pt-5">
-                 <h1>Mebros Renovar!</h1>
+             <div class="col-12 d-flex justify-content-center mb-5 pt-5">
+                 <h1>Membros Renovar!</h1>
              </div>
              <div class="col-12 col-sm-12 col-md-3 col-lg-3 col-xl-3 d-flex flex-column justify-content-center align-items-center">
               <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 140x140"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>
@@ -160,6 +176,8 @@
         <!-- /END THE FEATURETTES -->
       </div><!-- /.container -->
 
+      <hr class="featurette-divider" id="navinformacoes">
+
       <div class="row d-flex justify-content-center">
         <div class="col-12 col-sm-12 col-md-6">
           <div class="duvidas container pt-5" id="duvidasCont">
@@ -171,7 +189,7 @@
     
                 <div class="block-pergunta p-4">
                     <div class="d-flex align-items-center justify-content-between mb-5">
-                        <h5>Onde votar?</h5>
+                        <h5><b>Onde votar?</b></h5>
                         <a id="p2"><i id="icon2" class="ml-5 fas fa-plus green-text"></i></a>
                     </div>
                     
@@ -185,7 +203,7 @@
     
                 <div class="block-pergunta p-4">
                     <div class="d-flex align-items-center justify-content-between mb-5">
-                        <h5>Qual a data da votação?</h5>
+                        <h5><b>Qual a data da votação?</b></h5>
                         <a id="p3"><i id="icon3" class="ml-5 fas fa-plus green-text"></i></a>
                     </div>
                     
@@ -197,7 +215,7 @@
     
                 <div class="block-pergunta p-4">
                     <div class="d-flex align-items-center justify-content-between mb-5">
-                        <h5>Posso enviar sugestões?</h5>
+                        <h5><b>Posso enviar sugestões?</b></h5>
                         <a id="p4"><i id="icon4" class="ml-5 fas fa-plus green-text"></i></a>
                     </div>
                     
@@ -216,6 +234,7 @@
         </div>
       </div>
 
+      <hr class="featurette-divider" id="navsugestao">
 
     <div class="container mt-5" id="sugestao">
       <div class="row d-flex justify-content-center ml-1 mr-1">
@@ -234,7 +253,7 @@
             <h2 id="wpptexto2">Atendimento pelo <b>Whatsapp</b></h2>
           </div>
           <div class="mt-5" id="btnwpp">
-            <p><a class="btn btn-primary btn-wpp" href="https://chat.whatsapp.com/JfPcet3deI985gRAFbDxeY"><b>Clique para começar</b></a></p>
+            <p><a class="btn btn-primary btn-wpp" href="https://chat.whatsapp.com/JfPcet3deI985gRAFbDxeY" style="text-shadow: 0 0 0.2em #000000, 0 0 0.2em #000000, 0 0 0.2em #000000">Clique para começar</a></p>
           </div>
         </div>
         <div class="col-1 col-sm-1 col-md-1"></div>
@@ -246,23 +265,28 @@
           </div>
           <form>
             <div class="form-group">
-              <label for="exampleFormControlInput1">Nome:</label>
-              <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Digite seu nome...">
+              <label for="exampleFormControlInput1"><b>Nome:</b></label>
+              <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Digite seu nome..." required>
             </div>
             <div class="form-group">
-              <label for="exampleFormControlInput1">Whatsapp:</label>
-              <input type="number" class="form-control" id="exampleFormControlInput1" placeholder="Digite seu whatsapp...">
+              <label for="exampleFormControlInput1"><b>Whatsapp:</b></label>
+              <!-- <input type="number" class="form-control" placeholder="Digite seu whatsapp..."> -->
+              <the-mask :mask="['(##) #####-####','(##) ####-####']" type="text" name="wpp"
+                                    class="form-control" id="wpp" placeholder="Digite seu whatsapp..." required />
             </div>
             <div class="form-group">
-              <label for="exampleFormControlInput1">Endereço:</label>
-              <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Digite seu endereço...">
+              <label for="exampleFormControlInput1"><b>Endereço:</b></label>
+              <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Digite seu endereço..." required>
             </div>
             <div class="form-group">
-              <label for="exampleFormControlTextarea1">Deixe seu comentário:</label>
-              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+              <label for="exampleFormControlTextarea1"><b>Escreva seu comentário:</b></label>
+              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" required></textarea>
             </div>
-            <div id="btnenviarcomentario">
-              <p><a class="btn btn-secondary" href="#">Enviar comentário</a></p>
+            <!-- <div id="btnenviarcomentario">
+              <p><a class="btn btn-secondary btn-enviar" href="#" style="text-shadow: 0 0 0.2em #000000, 0 0 0.2em #000000, 0 0 0.2em #000000">Enviar comentário</a></p>
+            </div> -->
+            <div id="btnenviarcomentario"> 
+              <button type="submit" class="btn btn-secondary btn-enviar" style="text-shadow: 0 0 0.2em #000000, 0 0 0.2em #000000, 0 0 0.2em #000000">Enviar comentário</button>                     
             </div>
           </form>
         </div>
@@ -274,6 +298,7 @@
     <footer class=" d-flex justify-content-center align-items-end pt-3 mt-5" align="center">
       <p>&copy; 2020 Chapa Renovar. Todos os direitos reservados &middot;</p>
     </footer>
+      
   <script src="./js/jquery.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
@@ -308,6 +333,40 @@
           $("#icon5").toggleClass ("fas fa-times");
       })
   </script>
+
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+      <script type="text/javascript">
+          jQuery(document).ready(function(){
+
+          jQuery("#subirTopo").hide();
+
+          jQuery('a#subirTopo').click(function () {
+                  jQuery('body,html').animate({
+                    scrollTop: 0
+                  }, 500);
+                  return false;
+            });
+
+          jQuery(window).scroll(function () {
+                  if (jQuery(this).scrollTop() > 1000) {
+                      jQuery('#subirTopo').fadeIn();
+                  } else {
+                      jQuery('#subirTopo').fadeOut();
+                  }
+              });
+          });
+      </script>
+
+      <script>
+        window.onload = function () {
+          new Vue({
+            el: '#wpp'
+          })
+        }
+      </script>
+
+    <script src="js/wow.min.js"></script>
+    <script>new WOW().init();</script>
   
   </body>
 </html>
