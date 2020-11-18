@@ -69,7 +69,7 @@ nav a:hover{
 }
 
 /* DEMO-SPECIFIC STYLES */
-/* .typewritter h1 {
+ .typewritter h1 {
   color: #fff;
   overflow: hidden; /* Ensures the content is not revealed until the animation */
   border-right: .1em solid orange; /* The typwriter cursor */
@@ -79,25 +79,25 @@ nav a:hover{
   animation: 
     typing 3s steps(30, end),
     blink-caret .5s step-end infinite;
-} */
+} 
 
 /* The typing effect */
-/* @keyframes typing {
+@keyframes typing {
   from { width: 0 }
   to { width: 40% }
-} */
+}
 
 /* The typewriter cursor effect */
-/* @keyframes blink-caret {
+@keyframes blink-caret {
   from, to { border-color: transparent }
   10% { border-color: #ffffff3d }
-} */
+}
 
 #subirTopo{
   z-index: 9;
 	position:fixed;
-	bottom:0px;
-  right:0px;
+	bottom:0px!important;
+  right:0px!important;
   margin-right: 10px;
 }
 
